@@ -1,0 +1,16 @@
+{
+  "name": "hospital-navigation-system",
+  "version": "1.0.0",
+  "description": "Indoor hospital navigation using Node.js, MySQL, HTML, CSS, and JS",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "author": "krish",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3"
+  }
+}

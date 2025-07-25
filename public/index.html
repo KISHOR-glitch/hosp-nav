@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Navigation</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    #canvas-wrapper { position: relative; display: inline-block; }
+    #map { width: 600px; height: auto; }
+    #map-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #controls { margin-top: 20px; }
+    select { padding: 8px; }
+    button { padding: 8px 16px; margin-left: 10px; }
+    #distance { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+
+
+<body>
+  <h1>🏥 Hospital Navigation System</h1>
+
+  <div id="canvas-wrapper">
+    <img id="map" src="images/hospital-map.png" alt="Hospital Map">
+    <canvas id="map-overlay" width="600" height="400"></canvas>
+  </div>
+
+  <div id="controls">
+    <select id="from">
+      <option value="1">Entrance</option>
+      <option value="2">Reception</option>
+      <option value="3">Pharmacy</option>
+      <option value="4">ICU</option>
+      <option value="5">Rooms</option>
+    </select>
+    to
+    <select id="to">
+      <option value="1">Entrance</option>
+      <option value="2">Reception</option>
+      <option value="3">Pharmacy</option>
+      <option value="4">ICU</option>
+      <option value="5">Rooms</option>
+    </select>
+    <button onclick="navigate()">Navigate</button>
+  </div>
+
+  <div id="distance"></div>
+<button id="walk">🚶 Simulate Walk 10m</button>
+<button onclick="startGeoWalkTracking()">📍 Start GPS Walk</button>
+
+
+  <script src="index.js"></script>
+<button onclick="enableMotion()">📲 Enable Motion Tracking</button>
+
+</body>
+</html>
