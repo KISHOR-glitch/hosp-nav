@@ -232,4 +232,3 @@ function getDistanceFromLatLonInMeters(lat1, lon1, lat2, lon2) {
   return R * c;
 }
 
-https://github.com/KISHOR-glitch/hosp-nav.git
